@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f0f0;
+  gap: 24px;
+}
+
+#turn {
+  font-size: 32px;
+}
+
+.game-board {
+  display: grid;
+  gap: 12px;
+  background-color: #a0a0a0;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  padding: 0;
+  justify-content: center;
+  width: min-content;
+}
+
+.cell {
+  /* width: 120px; */
+  /* height: 120px; */
+  background-color: #fff;
+}
