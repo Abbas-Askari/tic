@@ -11,7 +11,7 @@ body {
 }
 
 #turn {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .game-board {
@@ -26,7 +26,39 @@ body {
 }
 
 .cell {
-  /* width: 120px; */
-  /* height: 120px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+  /* vertical-align: middle; */
   background-color: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item.radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.form-item.radio h1 {
+  grid-area: 1/1/2/3;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.form-item.radio div:first-child {
+  margin-right: auto;
 }
